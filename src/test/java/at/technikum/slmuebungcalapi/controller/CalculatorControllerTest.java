@@ -48,4 +48,18 @@ class CalculatorControllerTest {
         assertEquals(-11, result);
     }
 
+    @Test
+    void multiplyTwoInterger(){
+        //Arange
+        CalculatorController controller = new CalculatorController();
+        int a = 3;
+        int b = 7;
+
+        //Act
+        int result = controller.multiply(a,b);
+
+        //Assert
+        assertEquals(21, result);
+    }
+
 }
